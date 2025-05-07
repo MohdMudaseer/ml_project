@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome - Student Exam Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="landing-box">
+            <h1>🎓 Student Exam Performance Indicator</h1>
+            <p>This project uses a Machine Learning model to predict a student's math score based on factors like gender, race, parental education level, and test preparation status.</p>
+            <p>Fill out a short form with the required student information and get an instant prediction!</p>
+            <a href="{{ url_for('predict_datapoint') }}" class="btn-link">Go to Prediction Form</a>
+        </div>
+    </div>
+</body>
+</html>
